@@ -1,0 +1,134 @@
+{
+  "projectType": "saas",
+  "projectName": "eXeLearning",
+  "projectDescription": "Open-source educational content authoring tool with real-time collaboration and multi-format export capabilities.",
+  "theme": "almond",
+  "primaryColor": "#040404",
+  "lightColor": "#142434",
+  "darkColor": "#24dcc4",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/projects",
+              "concepts/idevices",
+              "concepts/collaboration",
+              "concepts/file-formats"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "guide/creating-projects",
+              "guide/adding-content",
+              "guide/organizing-content",
+              "guide/themes-styles",
+              "guide/exporting",
+              "guide/collaboration"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/overview",
+              "deployment/docker",
+              "deployment/configuration",
+              "deployment/authentication",
+              "deployment/high-availability"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/environment",
+              "development/testing",
+              "development/customization",
+              "development/embedding",
+              "development/internationalization"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "REST API",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/projects",
+              "api/pages",
+              "api/blocks",
+              "api/assets",
+              "api/export",
+              "api/users"
+            ]
+          },
+          {
+            "group": "CLI Commands",
+            "pages": [
+              "cli/overview",
+              "cli/user-management",
+              "cli/project-management",
+              "cli/export-commands",
+              "cli/maintenance"
+            ]
+          },
+          {
+            "group": "WebSocket API",
+            "pages": [
+              "websocket/overview",
+              "websocket/yjs-protocol",
+              "websocket/collaboration"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Interactive content authoring with 40+ iDevices",
+    "Real-time collaborative editing powered by Yjs",
+    "Multiple export formats (SCORM 1.2/2004, HTML5, EPUB3, IMS)",
+    "Multi-language support (7 languages)",
+    "Multiple authentication methods (Password, CAS, OpenID Connect)",
+    "Multi-database support (SQLite, PostgreSQL, MySQL)",
+    "Desktop application via Electron",
+    "Embeddable in LMS platforms",
+    "RESTful API for integrations",
+    "CLI for administration tasks"
+  ],
+  "publicApiSurface": [
+    "POST /api/v1/projects - Create project",
+    "GET /api/v1/projects/:id - Get project",
+    "PUT /api/v1/projects/:id - Update project",
+    "DELETE /api/v1/projects/:id - Delete project",
+    "POST /api/v1/pages - Create page",
+    "GET /api/v1/pages/:id - Get page",
+    "POST /api/v1/blocks - Create block",
+    "POST /api/v1/assets - Upload asset",
+    "POST /api/v1/export - Export project",
+    "GET /api/v1/users - List users",
+    "cli create-user - Create user account",
+    "cli user:role - Manage user roles",
+    "cli elp:convert - Convert ELP files",
+    "cli elp:export - Export projects",
+    "cli migrate - Run database migrations",
+    "cli projects:cleanup - Clean up projects",
+    "WebSocket /ws - Real-time collaboration"
+  ]
+}
